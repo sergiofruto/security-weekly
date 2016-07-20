@@ -1,0 +1,25 @@
+{
+  "articles-sample" : {
+    "article-1" : {
+      "author": "John Doe",
+      "date": "June 9, 2016",
+      "title": "How a Paypal Account was Hacked Using Social Engeneering",
+      "image": "https://auth0.com/lib/customers/img/logo-safari-books.svg",
+      "description":  "Brian Krebs discovered that on Christmas Eve his PayPal account was hacked, not due to a compromised password, but because the attacker called customer support to reset the password."
+    },    
+    "article-2" : {
+      "author": "John Doe",
+      "date": "June 10, 2016",
+      "title": "Data Breach Exposes Data of 3.3 Million Hello Kitty Fans",
+      "image": "https://auth0.com/lib/customers/img/logo-safari-books.svg",
+      "description":  "Brian Krebs discovered that on Christmas Eve his PayPal account was hacked, not due to a compromised password, but because the attacker called customer support to reset the password."
+    },
+    "article-3" : {
+      "author": "John Doe",
+      "date": "June 11, 2016",
+      "title": "Let’s Encrypt: The Free Certificate Authority",
+      "image": "https://auth0.com/lib/customers/img/logo-safari-books.svg",
+      "description":  "Brian Krebs discovered that on Christmas Eve his PayPal account was hacked, not due to a compromised password, but because the attacker called customer support to reset the password."
+    },
+  }
+}
