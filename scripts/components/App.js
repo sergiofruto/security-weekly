@@ -2,13 +2,13 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import SubscribeForm from './SubscribeForm';
-import Article from './Article';
+import ArticlesContainer from './ArticlesContainer';
 
 var App = () =>
   <div className="container">
     <Header></Header>
     <SubscribeForm></SubscribeForm>       
-    <Article></Article>
+    <ArticlesContainer></ArticlesContainer>
     <Footer></Footer>
   </div>;
 
