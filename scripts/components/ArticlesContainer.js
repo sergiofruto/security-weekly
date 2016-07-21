@@ -3,9 +3,9 @@ import ArticlesSample from '../article-sample.json';
 import Article from './Article';
 
 const ArticlesContainer = () =>
-  <section>
+  <section className="articles">
     <h1>Weekly News</h1>
-    {ArticlesSample.articles.map((id, author, date, title, image, description) =>
+    {ArticlesSample.articles.map(({ id, author, date, title, image, description }) =>
       <Article
         key={id}
         author={author}
@@ -18,3 +18,4 @@ const ArticlesContainer = () =>
   </section>
 
 export default ArticlesContainer;
+
