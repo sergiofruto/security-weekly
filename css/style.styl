@@ -1,19 +1,25 @@
 // Import all partials
 @require './_*.styl'
 
+
+.rm-break
+  display block
+  @media(min-width: 768px)
+    display none
+  
 .container
   width 100%
-  padding margin
+  padding gutter gutter 0
   display block
   margin 0 auto
   @media(min-width: 768px)
     max-width: 548px
   
 .intro-headline
-  margin-bottom margin
+  margin-bottom gutter
 
 .intro-text
-  margin 0 0 margin
+  margin 0 0 gutter
   opacity 0.69
   font-size 1.6rem
   line-height 32px
@@ -26,82 +32,107 @@
     display block
     width 100%
     padding 13px 15px
-    margin-bottom margin
+    margin-bottom gutter
     border: 1px solid rgba(0, 0, 0, 0.1)
     font-size 12px
     
   .input-submit
     padding 5px 16px
     font-size 12px
-    background: #FFFFFF;
+    background: #FFFFFF
     border 1px solid rgba(0, 0, 0, 0.1)
-    border-radius: 3.59px;
-    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.20), 0px 0px 0px 1px rgba(0,0,0,0.10);
+    border-radius: 3.59px
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.20), 0px 0px 0px 1px rgba(0,0,0,0.10)
 
 .articles
   > h1
     text-align left
     margin-bottom 20px
 
-  article
-    margin 0 auto 20px
-    border-bottom 1px solid rgba(0, 0, 0, .05)
-    display flex
-  
-    &:first-of-type
+article
+  &:first-of-type
+    .article-wrapper
       flex-flow: column
+    
       .article-text-content
-        order 1
-      .article-image
         width 100%
+        order 1
+      
+      .article-image
+        display block
+        width 100%
+        margin-right 0
         order 2
+      
       .article-title
         margin-bottom 14px
         font-size 2rem
         line-height 26px
         opacity 0.87
-
-    .article-text-content
-      order 2
-
-    .article-top-info
-      margin-bottom 8px
-      font-size 1.1rem
-      letter-spacing 0.50px
-      color #000000
-      opacity 0.7
       
-    .article-title
-      opacity 0.87
-      font-size 14.5px
-      font-size 1.45rem
-      line-height 20px
-      text-align left
-      color #000000
+      .article-description
+        display block
+        margin 20px 0 10px
+        order 4
 
-    .article-image
-      width 94px
-      height 94px
-      max-width 100%
-      margin-bottom 15px
-      background #FAFAFA
-      order: 1
+  .article-wrapper
+    padding 18px 0
+    border-bottom 1px solid rgba(0, 0, 0, .05)
+    display flex
+    align-items: center;
 
-    .article-description
-      margin-bottom 20px
-      opacity 0.87
-      font-size: 1.3rem
-      line-height: 18px
-      color: #000000
-      display none
+  .article-text-content
+    order 2
+
+  .article-top-info
+    display: block;
+    margin-bottom 8px
+    font-size 1.1rem
+    letter-spacing 0.50px
+    color #000000
+    opacity 0.7
+    
+  .article-title
+    margin-bottom 0
+    font-size 1.45rem
+    line-height 20px
+    text-align left
+    opacity 0.87
+    color #000000
+
+  .article-image
+    width 94px
+    height 94px
+    max-width 100%
+    margin-right 12px
+    background #FAFAFA
+    order: 1
+
+  .article-description
+    margin-bottom 20px
+    opacity 0.87
+    font-size: 1.3rem
+    line-height: 18px
+    color: #000000
+    display none
 
 footer
-  margin-top 20px
+  padding 25px 0
+  @media(min-width: 768px)
+    padding 50px 0
   p
+    margin 0
     font-family: 'Open Sans', sans-serif
     font-size: 14px
+    line-height 20px
     color: #111118
-
+    
+    .footer-icon
+      display inline-block
+      width 17px
+      height 20px
+      margin: 0 5px;
+      background url('images/auth0-small-icon.svg') center center no-repeat
 
 
 
