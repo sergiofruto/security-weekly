@@ -15,7 +15,22 @@ var buffer = require('vinyl-buffer');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var historyApiFallback = require('connect-history-api-fallback')
+var mjml = require('mjml');
+var mjmlCompile = require('gulp-mjml');
+var ejs = require('gulp-ejs');
 
+gulp.task('ejs', function () {
+  return gulp.src(['emails/**/*.ejs'])
+    .pipe(ejs())
+    .pipe(gulp.dest('build/emails/'))
+    .pipe(reload({stream:true}))
+});
+
+gulp.task('mjml', ['ejs'], function () {
+  return gulp.src(['build/emails/**/*.ejs', '!build/emails/_templates/*.ejs'])
+    .pipe(mjmlCompile(mjml))
+    .pipe(gulp.dest('build/emails/'))
+});
 
 /*
   Styles Task
@@ -50,6 +65,17 @@ gulp.task('browser-sync', function() {
     browserSync({
         // we need to disable clicks and forms for when we test multiple rooms
         server : {},
+        middleware : [ historyApiFallback() ],
+        ghostMode: false
+    });
+});
+
+gulp.task('browser-sync-emails', function() {
+    browserSync({
+        // we need to disable clicks and forms for when we test multiple rooms
+        server : {
+          baseDir: "./build/"
+        },
         middleware : [ historyApiFallback() ],
         ghostMode: false
     });
@@ -102,6 +128,10 @@ function buildScript(file, watch) {
 
 gulp.task('scripts', function() {
   return buildScript('main.js', false); // this will run once because we set watch to false
+});
+
+gulp.task('emails', ['mjml', 'browser-sync-emails'], function() {
+  return gulp.watch('emails/**/*', ['mjml']);
 });
 
 // run 'scripts' task first, then watch for future changes
