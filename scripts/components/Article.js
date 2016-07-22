@@ -6,8 +6,10 @@ const Article = (props) =>
       <div className="article-text-content">
         <span className="article-top-info">{props.author} - {props.date}</span>
         <h2 className="article-title">{props.title}</h2>
+      </div>
+      <div className="article-image">
+        <img src={props.image} />
       </div>    
-      <img className="article-image" src={props.image} />
       <p className="article-description">{props.description}</p>  
     </a>
   </article>;

@@ -61,8 +61,13 @@ article
       .article-image
         display block
         width 100%
+        min-height 87px
         margin-right 0
         order 2
+        
+        img
+          width auto
+          height 80%
       
       .article-title
         margin-bottom 14px
@@ -101,13 +106,21 @@ article
     color #000000
 
   .article-image
-    width 94px
-    height 94px
-    max-width 100%
+    position relative
+    flex 1
+    min-width 94px
+    min-height 94px
     margin-right 12px
     background #FAFAFA
     order: 1
-
+    
+    img
+      position absolute
+      top 50%
+      left 50%
+      width 70%
+      transform translate(-50%, -50%)
+      
   .article-description
     margin-bottom 20px
     opacity 0.87
