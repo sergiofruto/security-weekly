@@ -1,0 +1,75 @@
+<%
+  var articles = [
+    {
+      "id": 0,
+      "author": "John Doe",
+      "date": "June 9, 2016",
+      "title": "How a Paypal Account was Hacked Using Social Engeneering",
+      "image": "https://auth0.com/lib/customers/img/logo-safari-books.svg",
+      "description":  "Brian Krebs discovered that on Christmas Eve his PayPal account was hacked, not due to a compromised password, but because the attacker called customer support to reset the password."
+    },
+    {
+      "id": 1,
+      "author": "John Doe",
+      "date": "June 9, 2016",
+      "title": "Data Breach Exposes Data of 3.3 Million Hello Kitty Fans",
+      "image": "https://cdn.auth0.com/styleguide/latest/lib/circle-logo/img/falcor.svg",
+      "description":  ""
+    },  
+    {
+      "id": 2,
+      "author": "John Doe",
+      "date": "June 9, 2016",
+      "title": "Let’s Encrypt: The Free Certificate Authority",
+      "image": "https://cdn.auth0.com/styleguide/latest/lib/circle-logo/img/react.svg",
+      "description": ""
+    },  
+    {
+      "id": 3,
+      "author": "John Doe",
+      "date": "June 9, 2016",
+      "title": "Password Free Logins is a Reality",
+      "image": "https://cdn.auth0.com/styleguide/latest/lib/circle-logo/img/ruby.svg",
+      "description": ""
+    },
+    {
+      "id": 4,
+      "author": "John Doe",
+      "date": "June 9, 2016",
+      "title": "Will ‘Internet of Things’ be the Next Target of Cyber Criminals?",
+      "image": "https://cdn.auth0.com/styleguide/latest/lib/circle-logo/img/vue.svg",
+      "description": ""
+    }
+  ];
+%>
+
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-class name="subtitle" font-size="26px" color="#212121" padding="0 20px 15px 20px" margin="0" line-height="40" />
+      <mj-text align="center" color="#222228" font-family="'Avenir Next', Avenir, sans-serif" line-height="30" font-size="16px" />
+      <mj-list color="#222228" font-family="'Avenir Next', Avenir, sans-serif" line-height="30px" font-size="16px" />
+      <mj-button font-family="'Avenir Next', Avenir, sans-serif" background-color="#EB5424" font-size="12px" color="white" font-weight="500" padding="14px 20px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-container background-color="#ffffff">
+      <mj-section background-color="white" padding="40px 30px 30px 30px">
+        <mj-column width="100%" vertical-align="top" padding="0">
+          <mj-text font-size="22px" padding="0 0 20px 0">Security Weekly</mj-text>
+          <mj-text align="left" padding="0 0 20px 0">A free weekly newsletter with the best selection of IT Security news and articles.</mj-text>
+          <% articles.forEach(function(article){ %>
+            <mj-text><% article.author %></mj-text>
+          <% }); %>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#ffffff" padding="10px">
+        <mj-text font-size="12px" line-height="20">
+          You're receiving this email because you have an <strong style="font-weight: 500;">Auth0 account</strong>. If you are not sure why you’re reciving this, please contact your systems administrator.
+        </mj-text>
+        <mj-spacer height="30px" />
+      </mj-section>
+      <mj-container>
+  </mj-body>
+</mjml>
