@@ -4,6 +4,7 @@
 
 .rm-break
   display block
+  
   @media(min-width: 768px)
     display none
   
@@ -12,6 +13,7 @@
   padding gutter gutter 0
   display block
   margin 0 auto
+  
   @media(min-width: 768px)
     max-width: 548px
   
@@ -81,8 +83,9 @@ article
         order 4
 
   .article-wrapper
+    display -webkit-flex
     display flex
-    padding 18px 0
+    padding 20px 0
     border-bottom 1px solid rgba(0, 0, 0, .05)
     align-items: center;
 
@@ -107,7 +110,7 @@ article
 
   .article-image
     position relative
-    flex 1
+    flex 0 0 94px
     min-width 94px
     min-height 94px
     margin-right 12px
@@ -129,10 +132,38 @@ article
     color: #000000
     display none
 
+nav
+  .nav-list
+    padding 0
+    margin 25px 0
+    list-style none
+    
+    li
+      display inline-block
+      font-size 12px
+      margin 0 5px
+      
+      &:before
+        content '- '
+        color #3366BB
+        
+      &:first-child
+        margin-left 0
+        &:before
+          content ''
+      
+      a
+        color #3366BB
+        &:hover,
+        &.active
+          color: #000000
+          
 footer
-  padding 25px 0
+  padding 0 0 30px
+  
   @media(min-width: 768px)
     padding 50px 0
+    
   p
     margin 0
     font-family: 'Open Sans', sans-serif
