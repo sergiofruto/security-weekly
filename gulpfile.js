@@ -19,6 +19,10 @@ var mjml = require('mjml');
 var mjmlCompile = require('gulp-mjml');
 var ejs = require('gulp-ejs');
 
+/*
+  Email Template Generator Task
+*/
+
 gulp.task('ejs', function () {
   return gulp.src(['emails/**/*.ejs'])
     .pipe(ejs())
