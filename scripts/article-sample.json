@@ -5,7 +5,7 @@
     "author": "John Doe",
     "date": "June 9, 2016",
     "title": "How a Paypal Account was Hacked Using Social Engeneering",
-    "image": "https://auth0.com/lib/customers/img/logo-safari-books.svg",
+    "image": "https://s32.postimg.org/qe3pe2f9h/paypal.png",
     "description":  "Brian Krebs discovered that on Christmas Eve his PayPal account was hacked, not due to a compromised password, but because the attacker called customer support to reset the password."
   },
   {
@@ -13,7 +13,7 @@
     "author": "John Doe",
     "date": "June 9, 2016",
     "title": "Data Breach Exposes Data of 3.3 Million Hello Kitty Fans",
-    "image": "https://cdn.auth0.com/styleguide/latest/lib/circle-logo/img/falcor.svg",
+    "image": "https://s32.postimg.org/fjpnq6fmp/02_hello_kitty.png",
     "description":  ""
   },  
   {
@@ -21,7 +21,7 @@
     "author": "John Doe",
     "date": "June 9, 2016",
     "title": "Let’s Encrypt: The Free Certificate Authority",
-    "image": "https://cdn.auth0.com/styleguide/latest/lib/circle-logo/img/react.svg",
+    "image": "https://s32.postimg.org/o391nxnz5/02_lets_encrypt.png",
     "description": ""
   },  
   {
@@ -29,7 +29,7 @@
     "author": "John Doe",
     "date": "June 9, 2016",
     "title": "Password Free Logins is a Reality",
-    "image": "https://cdn.auth0.com/styleguide/latest/lib/circle-logo/img/ruby.svg",
+    "image": "https://s32.postimg.org/kl1n5acgx/03_auth0.png",
     "description": ""
   },
   {
@@ -37,7 +37,7 @@
     "author": "John Doe",
     "date": "June 9, 2016",
     "title": "Will ‘Internet of Things’ be the Next Target of Cyber Criminals?",
-    "image": "https://cdn.auth0.com/styleguide/latest/lib/circle-logo/img/vue.svg",
+    "image": "https://s32.postimg.org/9mqdn3nvl/05_iot.png",
     "description": ""
   }
 ]}
