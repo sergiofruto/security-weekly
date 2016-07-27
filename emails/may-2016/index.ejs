@@ -5,7 +5,7 @@
       "author": "John Doe",
       "date": "June 9, 2016",
       "title": "How a Paypal Account was Hacked Using Social Engeneering",
-      "image": "https://auth0.com/lib/customers/img/logo-safari-books.svg",
+      "image": "https://s32.postimg.org/qe3pe2f9h/paypal.png",
       "description":  "Brian Krebs discovered that on Christmas Eve his PayPal account was hacked, not due to a compromised password, but because the attacker called customer support to reset the password."
     },
     {
@@ -13,7 +13,7 @@
       "author": "John Doe",
       "date": "June 9, 2016",
       "title": "Data Breach Exposes Data of 3.3 Million Hello Kitty Fans",
-      "image": "https://cdn.auth0.com/styleguide/latest/lib/circle-logo/img/falcor.svg",
+      "image": "https://s32.postimg.org/fjpnq6fmp/02_hello_kitty.png",
       "description":  ""
     },  
     {
@@ -21,7 +21,7 @@
       "author": "John Doe",
       "date": "June 9, 2016",
       "title": "Let’s Encrypt: The Free Certificate Authority",
-      "image": "https://cdn.auth0.com/styleguide/latest/lib/circle-logo/img/react.svg",
+      "image": "https://s32.postimg.org/o391nxnz5/02_lets_encrypt.png",
       "description": ""
     },  
     {
@@ -29,7 +29,7 @@
       "author": "John Doe",
       "date": "June 9, 2016",
       "title": "Password Free Logins is a Reality",
-      "image": "https://cdn.auth0.com/styleguide/latest/lib/circle-logo/img/ruby.svg",
+      "image": "https://s32.postimg.org/kl1n5acgx/03_auth0.png",
       "description": ""
     },
     {
@@ -37,7 +37,7 @@
       "author": "John Doe",
       "date": "June 9, 2016",
       "title": "Will ‘Internet of Things’ be the Next Target of Cyber Criminals?",
-      "image": "https://cdn.auth0.com/styleguide/latest/lib/circle-logo/img/vue.svg",
+      "image": "https://s32.postimg.org/9mqdn3nvl/05_iot.png",
       "description": ""
     }
   ];
@@ -53,50 +53,48 @@
     </mj-attributes>
   </mj-head>
   <mj-body>
-    <mj-container background-color="#ffffff">
+    <mj-container background-color="#ffffff" padding="0">
       <mj-section background-color="white" padding="40px 60px 30px 60px">
         <mj-column width="100%" vertical-align="top" padding="0">
           <mj-text font-size="24px" padding="0 0 20px 0" align="left">securityweek.ly</mj-text>
-          <mj-text align="left" padding="0 0 20px 0">A free weekly newsletter with the best selection of IT Security news and articles.</mj-text>
-          <mj-text font-size="21px" padding="0 0 20px 0" align="left">Weekly News - June 7th</mj-text>
+          <mj-text color="rgba(0, 0, 0, 0.7)" align="left" padding="0 0 50px 0">A free weekly newsletter with the best selection of IT Security news and articles.</mj-text>
+          <mj-text font-size="21px" padding="0 0 10px 0" align="left">Weekly News - June 7th</mj-text>
           <% for(var i=0; i<articles.length; i++) { %>
             <% if (i==0) { %>
-            <mj-section border-bottom="1px solid grey">
+            <mj-section padding="0" border-bottom="1px solid grey">
               <mj-column padding="0" border-bottom= "1px solid black">
-                <mj-text align="left" padding="0 0 8px"><%= articles[i].author %> - <%= articles[i].date %></mj-text>
-                <mj-text align="left" padding="0 0 14px"><%= articles[i].title %></mj-text>
-                <mj-column background-color="#FAFAFA" width="100%" height="88px" padding="0 0 18px" margin="0 0 18px"> 
-                  <mj-image width="auto" height="38px" padding="25px 0 25px" src='<%= articles[i].image %>'/>
+                <mj-text padding="0" font-size="11px" color="rgba(0, 0, 0, 0.7)" align="left" line-height="20px"><%= articles[i].author %> - <%= articles[i].date %></mj-text>
+                <mj-text padding="0 0 14px" align="left" line-height="25px"><%= articles[i].title %></mj-text>
+                <mj-column background-color="#FAFAFA" width="480" height="88px" padding="0 0 18px" margin="0 0 18px"> 
+                  <mj-image width="480" padding="0" src='<%= articles[i].image %>'/>
                 </mj-column> 
                 <mj-text align="left" font-size="13px" line-height="18px" padding="0" color="rgba(0, 0, 0, 0.7)"><%= articles[i].description %></mj-text>
-              </mj-section>
-            </mj-column>
+                <mj-divider horizontal-spacing="0" vertical-spacing="0" padding-top="20" padding-bottom="0" padding-left="0" padding-right="0" border-width="1px" border-color="rgba(0, 0, 0, 0.1)" />
+              </mj-column>
+            </mj-section>
             <% } else { %>
               <!-- Article -->
-              <mj-section background-color="white">
-                <mj-column width="94px" height="94px" padding="0" vertical-align="middle">
-                  <mj-image padding="0" src='<%= articles[i].image %>' width="75px" vertical-align="middle" />
+              <mj-section padding-top="10px" padding-bottom="10px" padding-left="0" padding-right="0" background-color="white">
+                <mj-column width="110px" height="94px" padding-top="0px" padding-bottom="0px" padding-left="0" padding-right="16px" vertical-align="middle">
+                  <mj-image padding-top="0px" padding-bottom="0px" padding-left="0" padding-right="16px" src='<%= articles[i].image %>' width="94px" height="94px" vertical-align="middle" />
                 </mj-column>
-                <mj-column width="372px">
-                  <mj-text align="left" font-size="11px" padding="0 0 8px">
+                <mj-column width="366px" padding="0">
+                  <mj-text font-size="11px" color="rgba(0, 0, 0, 0.7)" align="left" line-height="20px" padding="0 0 8px">
                     <%= articles[i].author %> - <%= articles[i].date %>
                   </mj-text>
-                  <mj-text align="left" font-size="14.5px" padding="0 0 8px">
+                  <mj-text align="left" font-size="14.5px" line-height="20px" padding="0 0 8px">
                     <%= articles[i].title %>
                   </mj-text>
                 </mj-column>
               </mj-section>
+              <mj-divider horizontal-spacing="0" vertical-spacing="0" padding-top="0" padding-bottom="0" padding-left="0" padding-right="0" border-width="1px" border-color="rgba(0, 0, 0, 0.1)" />
               <% }; %>
           <% }; %>
         </mj-column>
-      </mj-section>
-
-      <mj-section background-color="#ffffff" padding="10px">
-        <mj-text font-size="12px" line-height="20">
-          You're receiving this email because you have an <strong style="font-weight: 500;">Auth0 account</strong>. If you are not sure why you’re reciving this, please contact your systems administrator.
+        <mj-text font-family="'Helvetica', 'Arial', 'sans-serif'" font-size="14px" align="left" padding-top="10px" padding-bottom="10px">
+          <p align="left" padding-top="10px" padding-bottom="10px" margin="0">Crafted by Auth0 <span className="footer-icon"></span>© 2013-2016 Auth0 Inc. All Rights Reserved.</p>
         </mj-text>
-        <mj-spacer height="30px" />
       </mj-section>
-      <mj-container>
+    <mj-container>
   </mj-body>
 </mjml>
