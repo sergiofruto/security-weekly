@@ -1,6 +1,8 @@
 // Import all partials
 @require './_*.styl'
 
+// global gutter
+gutter = 20px
 
 .rm-break
   display block
@@ -49,7 +51,7 @@
 .articles
   > h1
     text-align left
-    margin-bottom 20px
+    margin-bottom gutter
 
 article
   &:first-of-type
@@ -85,7 +87,7 @@ article
   .article-wrapper
     display -webkit-flex
     display flex
-    padding 20px 0
+    padding gutter 0
     border-bottom 1px solid rgba(0, 0, 0, .05)
     align-items: center;
 
